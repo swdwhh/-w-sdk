@@ -1,0 +1,40 @@
+{
+  "name": "@wahaha/bpm-sdk",
+  "version": "0.0.32",
+  "description": "娃哈哈bpm-skd是面向网页开发者提供的基于hi 娃哈哈客户端的网页开发工具包",
+  "keywords": [
+    "sdk",
+    "工具包",
+    "网页开发"
+  ],
+  "author": "辛成同学 <18356066200@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://verdaccio.wahaha.com.cn/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.wahaha.com.cn:8090/wahaha-frontend/bpm-sdk.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@wahaha/bpm-sdk-actions": "^0.0.13",
+    "@wahaha/bpm-sdk-device": "^0.0.5",
+    "@wahaha/bpm-sdk-file": "^0.0.5",
+    "@wahaha/bpm-sdk-location": "^0.0.4",
+    "@wahaha/bpm-sdk-utils": "^0.0.10"
+  },
+  "gitHead": "52d888a51896f09d3de34fd146286be4edbe1b6f"
+}

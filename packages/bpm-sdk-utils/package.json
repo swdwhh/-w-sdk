@@ -1,0 +1,27 @@
+{
+  "name": "@wahaha/bpm-sdk-utils",
+  "version": "0.0.10",
+  "description": "> TODO: description",
+  "author": "辛成同学 <18356066200@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://verdaccio.wahaha.com.cn/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.wahaha.com.cn:8090/wahaha-frontend/bpm-sdk.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

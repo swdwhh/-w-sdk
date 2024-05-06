@@ -1,0 +1,42 @@
+{
+  "name": "root",
+  "private": true,
+  "source": "./example/src/index.html",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-external-helpers": "^7.16.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/preset-env": "^7.16.4",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0",
+    "parcel": "^2.0.1",
+    "rollup": "^2.61.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna exec -- rollup -c=../../rollup.config.js",
+    "example": "parcel",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "dependencies": {
+    "dsbridge": "^3.1.4"
+  }
+}
